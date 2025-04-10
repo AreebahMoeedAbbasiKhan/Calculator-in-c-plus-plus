@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    char op;
+    cout << "What function do you wanna perform: \n 1.'+'\n 2.'-'\n3.'*'\n4.'/'\n5.'%'\n";
+    cin >> op;
+    int number_1;
+    cout << "Enter number 1:";
+    cin >> number_1;
+    int number_2;
+    cout << "Enter number 2:";
+    cin >> number_2;
+     
+    if (op == '+'  ) {
+        cout << "sum of numbers are" << number_1 + number_2;
+    }
+    else if (op == '-') {
+       cout << "Difference of numbers are" << number_1 - number_2;
+    }
+    else if (op == '*') {
+       cout << "Multiplication of numbers are" << number_1 * number_2;
+   }
+    else if (op == '/') {
+        if (number_2 != 0) {
+            cout << "Division of numbers are" << number_1 / number_2;
+        }
+        else {
+            cout << "Undefined";
+        }
+    }
+    else if (op == '%') {
+        if (number_2 != 0) {
+            cout << "Modulus of numbers are" << number_1 % number_2;
+        }
+        else {
+            cout << "Undefined";
+        }
+    }
+    return 0;
+
+
+   
+}
+
+
